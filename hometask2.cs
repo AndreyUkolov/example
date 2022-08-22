@@ -13,15 +13,34 @@
 // }
 //______________________________________________________________________________
 //!Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-Console.WriteLine ("Введите число а я найду его третью цифру");
+// Console.WriteLine ("Введите число а я найду его третью цифру");
+// int number= Convert.ToInt32(Console.ReadLine());
+// if (number>=100 || number<=-100)
+// {
+//     int pochti_otvet = (number % 1000)/100;
+//     int otvet = Math.Abs(pochti_otvet);
+//     Console.WriteLine("третья цифра = " + otvet);
+// }
+// else
+// {
+//     Console.WriteLine ("третьей цифры нет");
+// }
+//_______________________________________________________________________________________________________________________
+//Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+Console.WriteLine ("Введите номер дня недели, а я скажу выходной это или нет");
 int number= Convert.ToInt32(Console.ReadLine());
-if (number>=100 || number<=-100)
+if (number >=1 && number<=7)
 {
-    int pochti_otvet = (number % 1000)/100;
-    int otvet = Math.Abs(pochti_otvet);
-    Console.WriteLine("третья цифра = " + otvet);
+    if (number<=5)
+    {
+        Console.WriteLine ("это будний день'");
+    }
+    else
+    {
+        Console.WriteLine ("это выходной день");
+    }
 }
 else
 {
-    Console.WriteLine ("третьей цифры нет");
+   Console.WriteLine ("вы ввели неверный номер");
 }
